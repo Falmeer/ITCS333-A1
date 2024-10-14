@@ -7,12 +7,12 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f8ff; /* Light blue background */
+    background-color: #f0f8ff;
     color: #333;
 }
 
 header {
-    background-color: #001f3f; /* Navy blue */
+    background-color: #001f3f;
     padding: 20px;
     text-align: center;
 }
@@ -22,9 +22,9 @@ header h1 {
     color: #ffffff;
 }
 
-nav ul {
+nav ul { /* Flex Navigation */
     list-style: none;
-    display: flex;
+    display: flex; 
     justify-content: center;
     gap: 15px;
     flex-wrap: wrap;
@@ -39,7 +39,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #ffdfba; /* Light gold hover effect */
+    background-color: #ffdfba;
     color: #001f3f;
 }
 
@@ -66,7 +66,7 @@ ul {
     padding-left: 20px;
 }
 
-.gallery {
+.gallery { /* Flex Images */
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
@@ -88,14 +88,14 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Responsive Design for Tablets (768px and smaller) */
+/* Responsive Design (768px to 481px) */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 2rem; /* Adjust header size */
+        font-size: 2rem;
     }
 
     nav ul {
-        flex-direction: column; /* Stack navigation links vertically */
+        flex-direction: column;
         gap: 10px;
     }
 
@@ -104,39 +104,39 @@ footer {
     }
 
     .gallery img {
-        width: 120px; /* Smaller image size for tablets */
+        width: 120px; 
         height: 120px;
     }
 }
 
-/* Responsive Design for Mobile Phones (480px and smaller) */
+/* Responsive Design (480px and smaller) */
 @media (max-width: 480px) {
     header h1 {
-        font-size: 1.8rem; /* Smaller header size for mobile */
+        font-size: 1.8rem;
     }
 
     nav ul {
-        gap: 5px; /* Less gap between navigation links */
+        gap: 5px;
     }
 
     nav a {
-        padding: 8px; /* Reduce padding */
+        padding: 8px;
     }
 
     h2 {
-        font-size: 1.5rem; /* Adjust section title sizes */
+        font-size: 1.5rem;
     }
 
     p, ul {
-        font-size: 1rem; /* Smaller text for mobile */
+        font-size: 1rem;
     }
 
     .gallery img {
-        width: 100px; /* Even smaller images for mobile */
+        width: 100px;
         height: 100px;
     }
 
     footer {
-        font-size: 0.8rem; /* Smaller footer text */
+        font-size: 0.8rem;
     }
 }
